@@ -3,9 +3,12 @@ from users.schemas import CreateUser
 from users import crud
 
 
-router = APIRouter(prefix='/users', tags=['users'])
+router = APIRouter(
+    prefix="/users",
+    tags=["users"],
+)
 
 
-@router.post('/')
+@router.post("/")
 def create_user(user: CreateUser):
     return crud.create_user(user_in=user)
