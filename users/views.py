@@ -5,7 +5,7 @@ from users import crud
 
 router = APIRouter(
     prefix="/users",
-    tags=["users"],
+    tags=["Users"],
 )
 
 
